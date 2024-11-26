@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #202124;
+  color: white;
+}
+.title-content input{
+  width: 300px;
+}
+.description-content textarea{
+  width: 300px;
+  height: 300px;
+}
+
+
+/* Note list Styling ====================== */
+.note-app{
+  padding: 1rem;
+}
+.title-app{
+  text-align: center;
+}
+.note-item{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid white;
+  padding: 1rem;
+  width: auto;
+  word-wrap: break-word;
+}
+.note-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr)); /* Kolom dinamis */
+  gap: 1rem; /* Tambahkan jarak antar item */
+
+}
+.note-head p{
+  color: grey;
+}
+
+.note-item_delete{
+  width: 100px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
+.note-item_delete:hover{
+  background-color: red;
+}
+/* Navbar Styling */
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  gap: 500px;
+}
+.logo h4{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.search-box input{
+  width: 300px;
+  height: 30px;
+  outline: none;
+  padding: 1rem;
+}
+
+/* Form Input */
+.form-input{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 500px;
+  margin: auto;
+  /* position: relative; */
+}
+.form-input p{
+  position: relative;
+  left: 350px;
+}
+.description-content{
+  height: 200px;
+  outline: none;
+  padding: 1rem;
+}
+.title-content{
+  height: 30px;
+  padding: 1rem;
+  outline: none;
+}
+.button-input{
+  height: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.button-input:hover{
+  background-color: lightgreen;
+}
