@@ -1,9 +1,15 @@
 import React from "react";
 
-export default function SearchBox(){
-    return(
-        <div className="search-box">
-            <input type="text" id="search-input-box" placeholder="Cari catatan . . . ."/>
-        </div>
-    )
-}
+const SearchBox = ({ searchQuery, onSearch }) => {
+    return (
+      <input
+        type="text"
+        placeholder="Cari catatan..."
+        value={searchQuery}
+        onChange={(e) => onSearch(e.target.value)}
+        className="search-box"
+      />
+    );
+  };
+
+  export default SearchBox;

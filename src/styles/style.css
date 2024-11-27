@@ -50,8 +50,21 @@ body {
   border: none;
   cursor: pointer;
 }
+.note-item_archive{
+  width: 100px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
+.note-item_archive:hover{
+  background-color: yellow;
+}
 .note-item_delete:hover{
   background-color: red;
+}
+.note-footer{
+  display: flex;
+  gap: 10px;
 }
 /* Navbar Styling */
 .navbar{
@@ -105,4 +118,20 @@ body {
 
 .button-input:hover{
   background-color: lightgreen;
+}
+.active-catatan{
+  color: gray;
+  text-align: center;
+}
+.arsip-catatan{
+  color: gray;
+  text-align: center;
+}
+.title-aktif{
+  text-align: center;
+  margin-block: 30px;
+}
+.title-arsip{
+  margin-block: 30px;
+  text-align: center;
 }
