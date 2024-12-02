@@ -74,16 +74,20 @@ body {
   padding: 10px;
   border-bottom: 1px solid white;
   gap: 500px;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 2200;
 }
+
 .logo h4{
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.search-box input{
-  width: 300px;
-  height: 30px;
+.search-box {
   outline: none;
-  padding: 1rem;
+  padding: 7px;
+  width: 300px;
 }
 
 /* Form Input */
@@ -134,4 +138,23 @@ body {
 .title-arsip{
   margin-block: 30px;
   text-align: center;
+}
+
+.note-app{
+  margin-top: 100px;
+}
+
+/* Responsive */
+
+@media(min-width: 567px) and (max-width : 768px){
+  .navbar{
+    gap: 200px;
+  }
+  .form-input{
+    width: 90%;
+  }
+  body{
+    font-size: 12px;
+    overflow-x: hidden;
+  }
 }
