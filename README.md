@@ -1,7 +1,3 @@
-# notes-app
-Here's a README description for your **Notes App** project made with React:
-
----
 
 # Notes App
 
